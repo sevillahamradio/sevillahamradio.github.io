@@ -1,0 +1,165 @@
+/**Color fondo y font texto body principal**/
+
+body{       
+        color: #FFFFFF;
+         background-color:#1F2327;
+    }  
+h1{font-family:arial;}
+footer{
+  color:#ffffff;
+  background-color:#343a40;
+  text-align: center;
+}
+a:hover{color:#ffd215;}
+.menuicosvg{
+    width: 22px;
+    height: 22px;
+    margin-bottom: 4px;
+    margin-right: 6px;
+}
+.icoteam{
+    width: 22px;
+    height: 22px;
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    
+    }
+    .icoradio{
+    width: 22px;
+    height: 22px; 
+    margin-right: 4px;
+    margin-bottom: 6px;
+    }
+    .icoevent{
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    }
+   .icomerca{
+    width: 20px;
+    height: 20px;
+	margin-left: 1px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+   }
+   .icoabout{
+    width: 23px;
+    height: 23px;  
+    margin-right: 4px;
+    margin-bottom: 4px;
+   }
+.flecham{
+    width: 30px;
+    height: 30px;
+	   margin-bottom: 4px;   
+}
+
+.noticias-scroll{
+    font-size: 22px;
+    direction:left;
+    width: 90%;
+	max-width: 600px;
+    padding: 0px;
+    color:#d9ff95;
+	   margin-top: 5px;
+}
+.titulobanda{
+    color: #ffe740;
+    text-align: center;
+    text-decoration: underline;
+   padding-bottom: 10px;
+}
+
+.containervhf {
+ position: relative;
+ margin: 0 auto;
+ width: 350px; height: 710px;
+
+ }
+ 
+ .gfxmerca{
+ text-align: center;
+ text-decoration: underline;
+ }
+
+.renlfrecdig{
+	width: 90%;
+	max-width: 600px;
+    color: #baff80;
+    border-style: solid;
+    padding: 20px 10px 0px 10px;
+    }
+  .titulobox{max-width: 600px;
+	width: 90%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ffe715;
+    padding: 12px 10px 15px 10px;}
+    
+.princbox{
+	max-width: 600px;
+	width: 90%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #fff100;
+    padding: 14px 10px 0px 10px;
+    }
+.tituloboxre{
+    color:greenyellow; 
+    background-color:black; 
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+}
+.listabout{
+	width: 90%;
+	max-width: 600px;
+    border-style: solid;
+    border-width: 4px;
+    border-color:darkgoldenrod;
+    padding: 15px 15px 5px 15px; 
+    }
+
+.tiboxabout{
+	color:navajowhite;
+    background-color:black;
+    padding: 5px 5px 5px 5px;
+}
+.lixboxind{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ababab;
+    margin-top:10px;
+    margin-bottom: 5px;
+    padding: 20px 10px 5px 10px;
+}
+.cajasdrdial{ 
+    width: 340px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ababab;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 10px 5px 20px;
+}
+.cajasdrtxt{ 
+    width: 95%;
+	max-width: 600px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ababab;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px 10px 0px 10px;
+}
+.cuadrolistfreloc{
+    width: 95%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #5f7c8e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    }
