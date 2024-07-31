@@ -170,3 +170,22 @@ a:hover{color:#ffd215;}
     border-color: #5AF312;
     padding: 12px 10px 15px 10px;
 }
+.probteambox{max-width: 400px;
+	width: 75%;
+	border-style: solid;
+    border-width: 4px;
+    border-color: #FC5F5F;
+    padding: 12px 10px 15px 10px;
+}
+.datservbox{max-width: 400px;
+	width: 75%;
+	border-style: solid;
+    border-width: 4px;
+    border-color: #ff8800;
+    padding: 12px 10px 15px 10px;
+}
+.maninsbox{max-width: 370px;
+	border-style: solid;
+    border-width: 4px;
+    border-color: #18BBEC;
+}
