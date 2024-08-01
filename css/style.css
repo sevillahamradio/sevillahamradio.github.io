@@ -177,15 +177,51 @@ a:hover{color:#ffd215;}
     border-color: #FC5F5F;
     padding: 12px 10px 15px 10px;
 }
-.datservbox{max-width: 400px;
+.manlistbox{max-width: 400px;
 	width: 90%;
 	border-style: solid;
     border-width: 4px;
     border-color: #ff8800;
+    background-color: #000000;
     padding: 12px 10px 15px 10px;
 }
-.maninsbox{max-width: 370px;
+.maninsbox{max-width: 400px;
+ width: 90%;
 	border-style: solid;
+	   color :#fff100;
     border-width: 4px;
     border-color: #18BBEC;
+    background-color: #000000;
+    padding: 12px 10px 15px 10px;
+}
+/** parpadeo texto **/
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
