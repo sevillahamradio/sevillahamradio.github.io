@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--Pagina Web creada EMILIO EB7EIB Copyright (c) 2024, Radioenlace VHF-->    
+	<meta charset="utf-8">
+	<title>NUEVO USUARIO</title>
+	<meta name="description" content="Registro TeamSpeak Radioenlace.">
+	<!-- Iconos favicon pestaña-->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet">
+		</head>
+<body>  
+<center><img src="gfx/banner.png" alt="Banner SevillaHamRadio" width="750" height="150" class="img-fluid"></center>
+	<!-- MENU PRINCIPAL -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="color:#ffc880;" ><svg viewBox="0 0 64 64" fill="#15BB2D" class="flecham"><use href="gfx/menuico.svg#flecha"></use> </svg>NUEVO USUARIO</a>
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+        
+      <li class="nav-item"> <a class="nav-link" href="index.html"> <svg viewBox="0 0 576 576" Fill="#868686" class="menuicosvg"> <use href="gfx/menuico.svg#homeico"></use></svg>INICIO</a> </li>
+		
+      <li class="nav-item"> <a class="nav-link" href="radioenlace.html"> <svg viewBox="0 0 24 24" Fill="#868686" class="icoradio"> <use href="gfx/menuico.svg#radioenlico"></use></svg>RADIOENLACE</a> </li>
+		
+	  	<li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle"  href="" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 576 576" fill="#00ff2d" class="icoteam"> <use href="gfx/menuico.svg#teamico"></use></svg>TEAMSPEAK</a>
+			
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+			<a class="dropdown-item" href="teamspeak.html"><b>INICIO TEAMSPEAK </b></a>	
+			<a class="dropdown-item" href="users_team.html"><b>LISTA USUARIOS</b></a> 
+			<a class="dropdown-item active"><b>REGISTRO USUARIO</b></a>
+			
+		     <div class="dropdown-divider"></div> 
+			<a class="dropdown-item" href="man_team_android.html"><b>MANUAL ANDROID</b></a>
+			<a class="dropdown-item" href="man_team_win.html"><b>MANUAL WINDOWS</b></a>
+            			
+		    </div>			
+       </li>
+		
+	
+	  	  <li class="nav-item"> <a class="nav-link" href="eventos.html"><svg viewBox="0 0 452.986 452.986" Fill="#868686" class="icoevent"> <use href="gfx/menuico.svg#eventico"></use></svg>EVENTOS</a></li>
+	 <!--  
+	<li class="nav-item"> <a class="nav-link" href="merca.html"><svg viewBox="0 0 512 512" Fill="#868686" class="icomerca"> <use href="gfx/menuico.svg#mercaico"></use></svg>MERCARADIO</a></li>  
+	--> 
+	  <li class="nav-item"> <a class="nav-link" href="qsomos.html"><svg viewBox="0 0 256 256" Fill="#868686" class="icoabout"> <use href="gfx/menuico.svg#qsomosico"></use></svg>QUIÉNES SOMOS</a></li>  
+	</ul>  
+ </div>
+  </nav>
+<!-- FIN MENU PRINCIPAL -->
+
+<!-- Texto Prncipal -->
+
+
+<center>
+	<br>
+  <div style="width: 250px; color:#F66C27">
+		<h4>REGISTRO NUEVO USUARIO TEAMSPEAK RADIOENLACE</h4>
+		</div>
+		<br>
+	<div class="advreg">
+		<h4 style="color:#00FF05"><u>ADVERTENCIA</u></h4>	
+	<p style="width: 90%">CONSULTE EL APARTADO TEAMSPEAK ANTES DE CONTINUAR CON EL REGISTRO.</p>
+	<a href="teamspeak.html"> <img src="gfx/botteam.png" width="200px" alt="Boton teamspeak" class="img-fluid"></a>
+	</div>
+	<br>
+	
+  <form action="php/enviar.php" method="POST" >
+	  <div class="form-group col-9 col-sm-7 col-lg-4 col-md-6">
+	 <label class="reglab" for="INDICATIVO">INDICATIVO: <a style="color :#9DF5F9">(*)</a></label>
+	  <input name="INDICATIVO" type="text" required id="INDICATIVO" maxlength="10" placeholder="Indicativo">
+	  </div>
+	
+	  <div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6">
+    <label class="reglab" for="NOMBRE">NOMBRE: <a style="color :#9DF5F9">(*)&nbsp; &nbsp;&nbsp; </a></label>
+	
+    <input name="NOMBRE" type="text" required id="NOMBRE" maxlength="50" placeholder="Nombre" >
+	  </div> 
+	  	<div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6">
+     <label class="reglab" for="LOCALIDAD">LOCALIDAD:&nbsp; &nbsp; &nbsp;</label>
+	
+    <input name="LOCALIDAD" type="text" id="LOCALIDAD" maxlength="50" placeholder="Localidad">
+	  </div>
+	<div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6">	
+    <label class="reglab" for="PROVINCIA">PROVINCIA: <a style="color :#9DF5F9">(*)&nbsp;</a></label>
+	
+    <input name="PROVINCIA" type="text" required id="PROVINCIA" maxlength="50" placeholder="Provincia">
+	  </div>
+	 <div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6">
+    <label class="reglab" for="PAIS">PAIS: <a style="color :#9DF5F9">(*);&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a></label>
+    <input name="PAIS" type="text" required id="PAIS" maxlength="50" placeholder="Pais">
+	  </div>
+	  	  	 <div class="form-group col-9 col-sm-7 col-lg-4 col-md-6"> 
+    <label class="reglab" for="email">EMAIL: <a style="color :#9DF5F9">(*)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a></label>
+    <input name="email" type="email" required id="email" maxlength="50" placeholder="Email@">
+	  </div>  
+	 	  
+    	 
+	  <label class="reglab" for="comments">COMENTARIOS: </label>
+		 <br>
+	  <textarea name="comments" maxlength="500" cols="30" rows="5" placeholder="Comentarios"></textarea>	
+		  
+<div class="col-md-5 col-lg-4 col-9 col-sm-7">
+		 <br>
+	     <input style="background-color: #FF9900; padding:28px;" type="submit">
+		 <br>
+		 <br>
+		 <input style="color: #FF0000; padding:8px;" type="reset" name="reset" id="reset" value="Restablecer">
+	</div>    
+		 
+ </form>
+	<br>
+	<p> TODOS LOS CAMPOS <a style="color :#9DF5F9">(*)</a> SON OBLIGATORIOS.</p>
+	<p style="color: #FFFD01"><u>REGISTRO SOLO PARA RADIOAFICIONADOS</u></p>
+		
+  <!--
+		  <button type="submit" class="btn btn-primary">Submit</button>
+  -->  
+  </center>	
+</body>
+	
+<footer>
+	  <a href="qsomos.html" style="color:#ff8800">EA7BEG - EA7KPT</a><br>
+	 <p>© 2024 Emilio EB7EIB</p>
+	</footer>	
+</html>
+	
