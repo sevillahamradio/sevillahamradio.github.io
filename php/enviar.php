@@ -32,7 +32,7 @@
 
 		
  
-	if(mail('ea7beg@gmail.com,ea7kpt@gmail.com,emipc@yahoo.com,', $asunto, $email_message)){
+	if(mail('emipc@yahoo.com', $asunto, $email_message)){
 		
 				
 		echo "<p><font color=#D80003> <font size=40px> <center> ** REGISTRO ENVIADO **<br />** SEVILLAHAMRADIO**<br />CONSULTE SU CORREO<br />SI NO APARECE NINGUN EMAIL<br />CONSULTE BANDEJA SPAM </center></p>";
