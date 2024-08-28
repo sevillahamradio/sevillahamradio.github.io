@@ -8,7 +8,8 @@
 	<!-- Iconos favicon pestaña-->
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
+	
+<script src="https://www.google.com/recaptcha/api.js?render=6LeYITAqAAAAALEsAnu0koybh-h1BSeUUqq_LSox"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
@@ -16,6 +17,44 @@
 <link href="css/style.css" rel="stylesheet">
 		</head>
 <body>  
+
+<script>
+  var submitted = false;
+  var tokenCreated = false;
+  var formEl = document.getElementById('form-env');
+
+  formEl.addEventListener("submit", function (event) {
+
+    // Check if the recaptcha exists
+    if (!tokenCreated) {
+
+      // Prevent submission
+      event.preventDefault();
+
+      // Prevent more than one submission
+      if (!submitted) {
+        submitted = true;
+        // needs for recaptacha ready
+        grecaptcha.ready(function() {
+          // do request for recaptcha token
+          // response is promise with passed token
+          grecaptcha.execute('6LeYITAqAAAAALEsAnu0koybh-h1BSeUUqq_LSox', {action: 'create_comment'}).then(function (token) {
+            // add token to form
+            var input = document.createElement("input");
+            input.type = "hidden";
+            input.name = "g-recaptcha-response";
+            input.value = token;
+            formEl.appendChild(input);
+
+            // resubmit the form
+            tokenCreated = true;
+            formEl.submit();
+          });
+        });
+      }
+    }
+  });
+</script>
 <center><img src="gfx/banner.png" alt="Banner SevillaHamRadio" width="750" height="150" class="img-fluid"></center>
 	<!-- MENU PRINCIPAL -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -54,6 +93,7 @@
   </nav>
 <!-- FIN MENU PRINCIPAL -->
 
+	
 <!-- Texto Prncipal -->
 
 
@@ -70,12 +110,15 @@
 	</div>
 	<br>
 	
-  <form action="php/enviar.php" method="POST" >
+  <form action="php/enviar_reg.php" method="POST" id="form-env">
 	  <div class="form-group col-9 col-sm-7 col-lg-4 col-md-6">
 	 <label class="reglab" for="INDICATIVO">INDICATIVO: <a style="color :#9DF5F9">(*)</a></label>
-	  <input name="INDICATIVO" type="text" required id="INDICATIVO" maxlength="10" placeholder="Indicativo">
+	 
+	  <input name="INDICATIVO" type="text" required id="INDICATIVO" maxlength="10" placeholder="Indicativo">	  
 	  </div>
-	
+	<div style="width : 250px">
+	     <p>RADIOESCUCHA INTRODUCIR EL EN EL APARTADÓ INDICATIVO EL TEXTO <a style="color:#15f5ff">RADIOESCUCHA</a></p>
+	</div>
 	  <div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6">
     <label class="reglab" for="NOMBRE">NOMBRE: <a style="color :#9DF5F9">(*)&nbsp; &nbsp;&nbsp; </a></label>
 	
@@ -103,25 +146,52 @@
     	 
 	  <label class="reglab" for="comments">COMENTARIOS: </label>
 		 <br>
-	  <textarea name="comments" maxlength="500" cols="30" rows="5" placeholder="Comentarios"></textarea>	
+	  <textarea name="comments" maxlength="500" cols="30" rows="5" placeholder="En este apartado puedes agregar el teléfono móvil por si necesitas asistencia para la configuración Teamspeak o pertenercer a nuestro grupo de Whatsapp."></textarea>	
+	  <br>
+	  
+	  <br>
+		<div class="rec_normas_reg" >
+			<label style="color :#FFFD00;" for="normas"><u><strong>NORMAS Y USOS:</strong></u></label>  
+<br>
+<textarea class="img-fluid" name="normas" maxlength="500" cols="32" rows="5">
+1.- Esta prohibido hacer banda cruzada y link a repetidores. 
+	
+2.- Se recomienda no usar voz control en la configuración del cliente Teamspeak para evitar molestias a otros usuarios.  
+ 
+3.- El orden en la sala es fundamental para un buen entendimiento, se recomienda 
+ que el alias aportado por el Administrador no se altere los datos iniciales. 
+
+4.- Se aceptará dos cliente a la vez solo temporalmente para pruebas.	
+	
+5.- Intervalos entre cambio y cambio de 6 segundos y una transmisión máxima de 3 minutos. Todo ello es para el buen funcionamiento del servidor y los emisores del radioenlace.	
+ 	
+6.- El comportamiento de uso será ético, educado y de buen hacer en radio.
+
+El incumplimiento de estas normas puede llevar al expulsión temporal o permanente del servicio VOIP RADIOENLACE VHF.	
+</textarea>
+   <div class="form-group">
+	   <input type="checkbox" required><a style="color :#12FF00">&nbsp;&nbsp;Acepto las normas de uso</a><a style="color :#9DF5F9">&nbsp;(*)</a>
+	</div>
+</div>	
+	            
+	  <div class="col-md-5 col-lg-4 col-9 col-sm-7">
+		 <br>	
+		 		   
+		   		   <input style="background-color: #FF9900; padding:28px;" type="submit" name="enviar">
+	   		  
+		   	  <br>
+	
+		 <br>
 		  
-<div class="col-md-5 col-lg-4 col-9 col-sm-7">
-		 <br>
-	     <input style="background-color: #FF9900; padding:28px;" type="submit">
-		 <br>
-		 <br>
 		 <input style="color: #FF0000; padding:8px;" type="reset" name="reset" id="reset" value="Restablecer">
 	</div>    
 		 
  </form>
 	<br>
 	<p> TODOS LOS CAMPOS <a style="color :#9DF5F9">(*)</a> SON OBLIGATORIOS.</p>
-	<p style="color: #FFFD01"><u>REGISTRO SOLO PARA RADIOAFICIONADOS</u></p>
-		
-  <!--
-		  <button type="submit" class="btn btn-primary">Submit</button>
-  -->  
+ 
   </center>	
+	
 </body>
 	
 <footer>
