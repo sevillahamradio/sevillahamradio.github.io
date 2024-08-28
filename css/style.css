@@ -1,8 +1,8 @@
 /**Color fondo y font texto body principal**/
 
-body{       
-        color: #FFFFFF;
-         background-color:#1F2327;
+body{
+	color: #F8FF00;
+	background-color: #1F2327;
     }  
 h1{font-family:arial;}
 footer{
@@ -241,6 +241,16 @@ a:hover{color:#ffd215;}
     border-color:#FC0000;
 	padding: 10px 0px 10px 0px;
 }
+.rec_normas_reg{
+	max-width: 300px;
+	width: 95%;
+	border-style: inset;
+    border-width: 4px;
+    border-color:#F9F800;
+	padding: 10px 0px 10px 0px;
+}
+
+
 @media screen and (min-width: 600px) { .ocultar-div{
  display:none; 
  } }
@@ -258,6 +268,11 @@ a:hover{color:#ffd215;}
   
   border-top: 2px solid #0054FF !important;
 }
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
 /** parpadeo texto **/
 .parpadea {
   
