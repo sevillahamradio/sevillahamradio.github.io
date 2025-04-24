@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--Pagina Web creada EMPC Copyright (c) 2024, Radioenlace VHF-->    
+	<meta charset="utf-8">
+	<title>NUEVO USUARIO</title>
+	<meta name="description" content="Registro TeamSpeak Radioenlace.">
+	<!-- Iconos favicon pestaña-->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+<script src="https://www.google.com/recaptcha/api.js?render=6LeYITAqAAAAALEsAnu0koybh-h1BSeUUqq_LSox"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet">
+		</head>
+<body>  
+
+<center><img src="gfx/banner.png" alt="Banner SevillaHamRadio" width="750" height="150" class="img-fluid"></center>
+	<!-- MENU PRINCIPAL -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="color:#ffc880;" ><svg viewBox="0 0 64 64" fill="#15BB2D" class="flecham"><use href="gfx/menuico.svg#flecha"></use> </svg>NUEVO USUARIO</a>
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+        
+      <li class="nav-item"> <a class="nav-link" href="index.html"> <svg viewBox="0 0 576 576" Fill="#868686" class="menuicosvg"> <use href="gfx/menuico.svg#homeico"></use></svg>INICIO</a> </li>
+		
+      <li class="nav-item"> <a class="nav-link" href="radioenlace.html"> <svg viewBox="0 0 24 24" Fill="#868686" class="icoradio"> <use href="gfx/menuico.svg#radioenlico"></use></svg>RADIOENLACE</a> </li>
+		
+	  	<li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle"  href="" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24" fill="#00ff2d" class="icoteam"> <use href="gfx/menuico.svg#teamico"></use></svg>TEAMSPEAK</a>
+			
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+		<a class="dropdown-item" href="teamspeak.html"> <svg viewBox="0 0 24 24" fill="#868686" class="icoteam"> <use href="gfx/menuico.svg#teamico"></use></svg> <b>INICIO TEAMSPEAK </b></a>
+		<!--	<a class="dropdown-item" href="users_team.html"><b>LISTA USUARIOS</b></a> -->
+		<a  STYLE= "color: black" class="dropdown-item active" href="registro.html"><svg viewBox="0 0 512 512" fill="gold" class="icoregi"> <use href="gfx/menuico.svg#regico"></use></svg><b>REGISTRO USUARIO</b></a>
+		     <div class="dropdown-divider"></div> 
+			<a  class="dropdown-item" href="man_team_android.html"><svg viewBox="0 0 413.137 413.137" fill="#868686" class="icoregi"> <use href="gfx/menuico.svg#androico"></use></svg><b>MANUAL ANDROID</b></a>
+			<a  class="dropdown-item" href="man_team_win.html"><svg viewBox="0 0 164.11 144.637" fill="#868686" class="icoteam"> <use href="gfx/menuico.svg#winico"></use></svg> <b>MANUAL WINDOWS</b></a>        			
+		    </div>			
+       </li>
+	 <li class="nav-item"> <a class="nav-link" href="eventos.html"><svg viewBox="0 0 452.986 452.986" Fill="#868686" class="icoevent"> <use href="gfx/menuico.svg#eventico"></use></svg>EVENTOS</a></li>
+	 <!--  
+	 <li class="nav-item"> <a class="nav-link" href="merca.html"><svg viewBox="0 0 512 512" Fill="#868686" class="icomerca"> <use href="gfx/menuico.svg#mercaico"></use></svg>RADIOMERCA</a></li>	  
+	-->
+	  <li class="nav-item"> <a class="nav-link" href="qsomos.html"><svg viewBox="0 0 256 256" Fill="#868686" class="icoabout"> <use href="gfx/menuico.svg#qsomosico"></use></svg>ABOUT</a></li>  
+	</ul>  
+ </div>
+  </nav>
+<!-- FIN MENU PRINCIPAL -->
+
+	
+<!-- Texto Prncipal -->
+
+
+<center>
+	<br>
+  <div style="width: 250px; color:#F66C27">
+	  <h4>REGISTRO NUEVO USUARIO TEAMSPEAK</h4>
+	  <h4>RADIOENLACE VHF</h4>
+	  <h4>RADIOENLACE CB</h4>
+		</div>
+		<br>
+	<div class="advreg">
+		<h4 style="color:#00FF05"><u>ADVERTENCIA</u></h4>	
+	<p style="width: 90%">CONSULTE EL APARTADO TEAMSPEAK ANTES DE CONTINUAR CON EL REGISTRO.</p>
+	<a href="teamspeak.html"> <img src="gfx/botteam.png" width="200px" alt="Boton teamspeak" class="img-fluid"></a>
+	</div>
+	<br>
+	<form action="php/enviar_reg_nulo.php" method="POST" id="form_env" autocomplete="off">
+	<h4 style="margin-bottom: 15px;"><u>TIPO DE OPERADOR</u></h4>
+		
+		   <div style="width: 240px;text-align: left; margin-bottom: 15px;">
+			<div style="margin-bottom: 10px;">   
+	  <input name="licencia" type="radio" value="radioaf" id="refin1" required><a style="color :#12FF00">&nbsp;&nbsp;<u>OPERADOR VHF</u></a><a style="color :#9DF5F9">&nbsp;(*)</a>
+		</div>
+			   <div style="margin-bottom: 10px;">
+		 	   <input name="licencia" type="radio" value="cb27" id="refin2" required><a style="color :#30BFFB">&nbsp;&nbsp;<u>OPERADOR CB-27MHZ</u></a><a style="color :#30BFFB">&nbsp;(*)</a>
+				   </div>
+		  <div>
+	   <input name="licencia" type="radio" value="radioesc" id="refin3" required><a style="color :#F5891E">&nbsp;&nbsp;<u>RADIOESCUCHA</u></a><a style="color :#F5891E">&nbsp;(*)</a>
+			  </div>
+	  </div>
+	  <div class="boxderlic" style="width: 300px;">
+		<div style="color:#FFFFFF;margin-bottom: 10px;"><a style="color:#A7E5FF"><u>OPERADOR VHF</u></a><br><a style="color:#fffc6a"> Licencia estatal EA o licencia equivalente que le autorice el uso de la banda 2 metros (144Mhz).</a><br><a style="color:#ffbd6a">RX-TX</a> Radioenlace <a style="color:#27FF32">VHF-CB</a>.</div>
+	
+		<div style="color:#FFFFFF;margin-bottom:10px;"><a style="color:#A7E5FF"><u>OPERADOR CB-27MHZ</u></a><br><a style="color:#ffbd6a">RX-TX</a> Radioenlace <a style="color:#27FF32">CB.</a><br><a style="color:#ffbd6a">Recepción</a> <a style="color:#27FF32">VHF</a>.</div>
+		<div style="color:#FFFFFF"><a style="color:#A7E5FF"><u>RADIOESCUCHA</u></a><br><a style="color:#ffbd6a">Recepción</a> <a style="color:#27FF32">CB-VHF</a>.</div>
+	</div>
+		<div class="advregcb" id="divinf" style="display:none; margin:15px 0px 5px 0px">
+		<p style="color:aliceblue"><a style="color:#00FF6C">USUARIOS CB</a> se aconseja que utilicen el apodo de guerra en el apartado del <a style="color:#F9F000">INDICATIVO</a>, para facilitar la comunicación entre usuarios.<br> (Ejemplo estación <a style="color:#15f5ff">SATURNO)</a></p>
+		<p style="color:aliceblue"><a style="color:#00FF6C">RADIOESCUCHA</a> introducir en el apartado <a style="color:#F9F000">INDICATIVO</a> un alias que le identifique o su nombre.<br>(Ejemplo <a style="color:#15f5ff">JUAN</a>)</p>
+		</div>
+		<div class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divea" style="display:none">
+		  <label class="reglab" for="indicativoea"><u>INDICATIVO EA:</u><a style="color :#9DF5F9">(*)</a></label>
+	 
+	  <input style="text-transform:uppercase;" name="indicativoea" type="text" required id="indicativoea" maxlength="40" placeholder="Indicativo EA o equivalente">	  
+	  </div> 
+	  
+	 <div class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divcb" style="display:none">
+		  <label id="labcb" class="reglab" for="indicativocb"><u>INDICATIVO CB:</u> </label>
+	 
+	  <input style="text-transform:uppercase;" name="indicativocb" type="text" id="indicativocb" maxlength="40" placeholder="Indicativo CB">	  
+	  </div>  
+	<div class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divres" style="display:none">
+		  <label class="reglab" for="indicativoresc"><u>INDICATIVO:</u><a style="color :#9DF5F9">(*)</a> </label>
+	 
+	  <input style="text-transform:uppercase;" name="indicativoresc" type="text" id="indicativoresc" maxlength="40" placeholder="Indicativo Radioescucha">	  
+	  </div>     
+		  <div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divnom" style="display:none">
+		  <label class="reglab" for="nombre"><u>NOMBRE:</u> <a style="color :#9DF5F9">(*)&nbsp; &nbsp;&nbsp; </a></label>
+	
+    <input style="text-transform:uppercase;" name="nombre" type="text" required id="nombre" maxlength="50" placeholder="Nombre" >
+	  </div> 
+	  	<div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divloc" style="display:none">
+			<label class="reglab" for="localidad"><u>LOCALIDAD:</u>&nbsp; &nbsp; &nbsp;</label>
+	
+    <input style="text-transform:uppercase;" name="localidad" type="text" id="localidad" maxlength="50" placeholder="Localidad">
+	  </div>
+	<div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divprov" style="display:none">	
+		<label class="reglab" for="provincia"><u>PROVINCIA:</u> <a style="color :#9DF5F9">(*)&nbsp;</a></label>
+	
+    <input style="text-transform:uppercase;" name="provincia" type="text" required id="provincia" maxlength="50" placeholder="Provincia">
+	  </div>
+	 <div class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divpai" style="display:none">
+		 <label class="reglab" for="pais"><u>PAIS:</u> <a style="color :#9DF5F9">(*);&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a></label>
+    <input style="text-transform:uppercase;" name="pais" type="text" required id="pais" maxlength="50" placeholder="Pais">
+	  </div>
+	  	  	 <div class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divema" style="display:none"> 
+				 <label class="reglab" for="email"><u>EMAIL:</u> <a style="color :#9DF5F9">(*)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a></label>
+    <input style="text-transform: lowercase;" name="email" type="email" required id="email" maxlength="50" placeholder="Email@">
+	  </div>  
+	 <div  class="form-group col-9 col-sm-7 col-lg-4 col-md-6" id="divtel" style="display:none">
+		 <label class="reglab" for="telefono"><u>TELÉFONO  :</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input name="telefono" type="number" id="telefono" maxlength="50" placeholder="Teléfono">
+	  </div> 	  
+   <div id="divcom" style="display:none"> 	 
+		<label class="reglab" for="comentarios"><u>COMENTARIOS:</u> </label>
+		 <br>
+	  <textarea id="comen" name="comentarios" maxlength="500" cols="30" rows="5" placeholder="En este apartado puedes indicar si necesitas asistencia para la configuración Teamspeak o pertenercer a nuestro grupo de Whatsapp (TELEFONO)."></textarea>	
+<br>
+<label class="reglab" for="normas"><font color="#40ffe0"><u>NORMAS DE USO:</u></font></label>
+<br>	   
+<textarea class="img-fluid" name="normas" maxlength="500" cols="30" rows="5">
+1.- Esta prohibido hacer banda cruzada y link a repetidores. 
+	
+2.- Se recomienda no usar voz control en la configuración del cliente Teamspeak para evitar molestias a otros usuarios.  
+ 
+3.- El orden en la sala es fundamental para un buen entendimiento, se recomienda 
+ que el alias aportado por el Administrador no se altere los datos iniciales. 
+
+4.- Se aceptará dos cliente a la vez solo temporalmente para pruebas.	
+	
+5.- Intervalos entre cambio y cambio de 6 segundos y una transmisión máxima de 3 minutos. Todo ello es para el buen funcionamiento del servidor y los emisores del radioenlace.	
+ 	
+6.- El comportamiento de uso será ético, educado y de buen hacer en radio.
+
+El incumplimiento de estas normas puede llevar al expulsión temporal o permanente del servicio VOIP RADIOENLACE VHF-CB.	
+</textarea>
+</div>
+   <div id="divnor" style="display:none; padding-top: 10px" class="form-group">
+       
+	   <input id="ace_nor" type="checkbox" required>
+	   <a style="color :#12FF00">&nbsp;&nbsp;<u>Acepto las normas de uso</u></a><a style="color :#9DF5F9">&nbsp;(*)</a>
+	</div>   
+	        
+	  <div class="col-md-5 col-lg-4 col-9 col-sm-7" id="divbot" style="display:none;">
+
+		 		   <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+		   		   <input style="background-color: #FF9900; padding:28px;" type="submit" name="enviar"> 		  
+		   	  <br>
+		 <br>
+		 <input style="color: #FF0000;padding:15px;" type="reset" name="reset" id="reset" value="Restablecer">
+	</div>
+	<div> 
+	    <br>  
+		 <p> TODOS LOS CAMPOS <a style="color :#9DF5F9">(*)</a> SON OBLIGATORIOS.</p>
+		 </div> 
+ </form>
+
+  </center>	
+	<script>
+  grecaptcha.ready(function() {
+   grecaptcha.execute('6LeYITAqAAAAALEsAnu0koybh-h1BSeUUqq_LSox', {action: 'Registro'})
+.then(function(token) {
+var recaptchaResponse = document.getElementById('recaptchaResponse');
+recaptchaResponse.value = token;
+});});
+</script>
+
+<script>
+     $(document).ready(function() {
+ $("#refin1").click(function(){
+		 $("#divinf,#divea, #divcb,#divnom,#divloc,#divprov,#divpai,#divema,#divtel,#divcom,#divnor,#divbot").show() ;
+ $("#divres").hide(); 
+ document.getElementById("indicativoea").required = true;	 
+ document.getElementById("indicativocb").removeAttribute("required");
+ document.getElementById("labcb").innerHTML='<u>INDICATIVO CB:</u>';
+ document.getElementById("indicativoresc").removeAttribute("required");
+ 
+document.getElementById('indicativoea').focus();  
+  }); 
+          
+  $("#refin2").click(function(){
+$("#divinf,#divea,#divcb,#divnom,#divloc,#divprov,#divpai,#divema,#divtel,#divcom,#divnor,#divbot").show() ;      
+  $("#divea,#divres").hide();
+document.getElementById("labcb").innerHTML= '<u>INDICATIVO CB:</u> <span style="color: #9DF5F9;">(*)</span>';
+document.getElementById('indicativocb').required = true;
+document.getElementById("indicativoresc").removeAttribute("required"); 
+document.getElementById("indicativoea").removeAttribute("required");
+
+document.querySelector("#refin2").checked=true;
+	document.getElementById('indicativocb').focus();    
+      }); 
+  
+    $("#refin3").click(function() {
+$("#divea,#divcb").hide();
+ $("#divinf,#divres,#divnom,#divloc,#divprov,#divpai,#divema,#divtel,#divcom,#divnor,#divbot").show() ;
+ document.getElementById("indicativoea").removeAttribute("required"); 
+ document.getElementById("labcb").innerHTML= '<u>INDICATIVO CB:</u>';
+ document.getElementById("indicativocb").removeAttribute("required"); 
+ document.getElementById('indicativoresc').required = true;
+ 	document.getElementById('indicativoresc').focus();  		
+        });
+$("#refin1,#refin2,#refin3").click(function(){ 
+ document.getElementById("indicativoea").value = "";
+document.getElementById("indicativocb").value = "";
+document.getElementById("indicativoresc").value = "";		 
+document.getElementById("nombre").value = "";
+document.getElementById("localidad").value = "";
+document.getElementById("provincia").value = "";	
+document.getElementById("pais").value = "";		 
+document.getElementById("email").value = "";
+document.getElementById("telefono").value = "";
+document.getElementById("comen").value = "";
+$("#ace_nor").prop("checked", false);      
+ });
+ 
+ $("#reset").click(function() {
+   $("#divinf,#divea, #divcb,#divnom,#divloc,#divprov,#divpai,#divema,#divtel,#divcom,#divnor,#divbot,#divresc").hide() ;                  
+     });   
+   });   
+ // script quitar espacio texto 
+      indicativoea.addEventListener("keyup",e=>{ let string = e.target.value; 
+e.target.value = string.trim(); 
+});
+ email.addEventListener("keyup",e=>{ let string = e.target.value; 
+e.target.value = string.trim(); 
+})
+</script>
+</body>
+	
+<footer>
+	  <a href="qsomos.html" style="color:#ff8800">EA7BEG - EA7KPT</a><br>
+	 <p>© 2024 EB7EIB</p>
+	</footer>	
+</html>
+	
